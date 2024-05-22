@@ -1,8 +1,18 @@
 # Blockchain-Simulator
 
-This is a simple blockchain simulator that demonstrates how a blockchain works. It starts with a "genesis block," which is the first block in the blockchain. After that, users can add new blocks to the blockchain by mining them. The simulator also checks if the blockchain is valid by verifying that each block’s previous hash matches.
+This project is a simple blockchain simulator that demonstrates the basic principles of how a blockchain operates. It starts with a "genesis block" as the initial block in the blockchain. Users can then mine new blocks, which involves finding a valid proof of work and appending the block to the chain. The simulator also includes functionality to verify the integrity of the blockchain by ensuring that each block’s previous hash is correct.
 
-The simulator is built entirely in Python. FastAPI is used to make the simulator interactive and easy to understand.
+The simulator is implemented entirely in Python, utilizing FastAPI to provide an interactive web interface. This interface allows users to easily interact with the blockchain by mining new blocks, viewing the current blockchain, and checking its validity.
+
+## Features
+- **Genesis Block**: Initializes the blockchain with a genesis block.
+- **Block Mining**: Users can mine new blocks by providing data.
+- **Blockchain Validation**: Ensures the integrity of the blockchain by verifying hashes.
+- **Interactive Interface**: FastAPI is used to create a user-friendly web interface.
+
+## Project Structure
+- `main.py`: Contains the FastAPI application setup and endpoints.
+- `blockchain.py`: Contains the Blockchain class and related methods for blockchain operations.
 
 Below are images of the simulator:
 
